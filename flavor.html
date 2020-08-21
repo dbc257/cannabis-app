@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"
+    />
+
+    <link rel="stylesheet" href="css/flavor.css" />
+    <title>Cannabis Strain App Website</title>
+  </head>
+
+  <body>
+    <nav id="navBar" class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">Cannabis Strain App</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >View
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a href="type.html"
+                ><button class="dropdown-item">Strain Type</button></a
+              >
+              <a href="effect.html"
+                ><button class="dropdown-item">Strain Effects</button></a
+              >
+              <a href="flavor.html">
+                <button class="dropdown-item">Strain Flavors</button></a
+              >
+              <a> <div class="dropdown-divider"></div></a>
+              <a href="allstrain.html">
+                <button class="dropdown-item">All Strains</button></a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <img src="images/weed-fruit.jpg" class="img-fluid" alt="Responsive image" />
+    <p></p>
+    <div id="strainInfo">
+      <h3>Filter Cannabis Strains by Flavor</h3>
+      <p>
+        Each cannabis strain has a unique flavor profile. <br />
+        Some are full and rich, resembling coffee or hints of vanilla. Some
+        offer a powerful zing of citrus. Others remain close to their roots (pun
+        fully intended) holding a pungent, earthy taste close to heart.
+      </p>
+      <label>Use the selector to filter cannabis strains by flavor:</label>
+      <p></p>
+      <select id="flavorSelector" class="selectpicker" data-live-search="true">
+        <option name="flav" value="Earthy">Earthy</option>
+        <option name="flav" value="Chemical">Chemical</option>
+        <option name="flav" value="Pine">Pine</option>
+        <option name="flav" value="Spicey/Herbal">Spicey/Herbal</option>
+        <option name="flav" value="Pungent">Pungent</option>
+        <option name="flav" value="Pepper">Pepper</option>
+        <option name="flav" value="Flowery">Flowery</option>
+        <option name="flav" value="Citrus">Citrus</option>
+        <option name="flav" value="Orange">Orange</option>
+        <option name="flav" value="Sweet">Earthy</option>
+        <option name="flav" value="Skunk">Skunk</option>
+        <option name="flav" value="Grape">Grape</option>
+        <option name="flav" value="Minty">Minty</option>
+        <option name="flav" value="Woody">Woody</option>
+        <option name="flav" value="Cheese">Cheese</option>
+        <option name="flav" value="Diesel">Diesel</option>
+        <option name="flav" value="Tropical">Tropical</option>
+        <option name="flav" value="Grapefruit">Grapefruit</option>
+        <option name="flav" value="Nutty">Nutty</option>
+        <option name="flav" value="Lemon">Lemon</option>
+        <option name="flav" value="Berry">Berry</option>
+        <option name="flav" value="Blueberry">Blueberry</option>
+        <option name="flav" value="Ammonia">Ammonia</option>
+        <option name="flav" value="Apple">Apple</option>
+        <option name="flav" value="Rose">Rose</option>
+        <option name="flav" value="Butter">Butter</option>
+        <option name="flav" value="Honey">Honey</option>
+        <option name="flav" value="Tea">Tea</option>
+        <option name="flav" value="Lime">Lime</option>
+        <option name="flav" value="Lavender">Lavender</option>
+        <option name="flav" value="Strawberry">Strawberry</option>
+        <option name="flav" value="Mint">Mint</option>
+        <option name="flav" value="Chestnut">Chestnut</option>
+        <option name="flav" value="Tree Fruit">Tree Fruit</option>
+        <option name="flav" value="Pear">Pear</option>
+        <option name="flav" value="Apricot">Apricot</option>
+        <option name="flav" value="Peach">Peach</option>
+        <option name="flav" value="Blue Cheese">Blue Cheese</option>
+        <option name="flav" value="Menthol">Menthol</option>
+        <option name="flav" value="Coffee">Coffee</option>
+        <option name="flav" value="Tar">Tar</option>
+        <option name="flav" value="Mango">Mango</option>
+        <option name="flav" value="Pineapple">Pineapple</option>
+        <option name="flav" value="Sage">Sage</option>
+        <option name="flav" value="Vanilla">Vanilla</option>
+        <option name="flav" value="Plum">Plum</option>
+        <option name="flav" value="Tobacco">Tobacco</option>
+        <option name="flav" value="Violet">Violet</option>
+      </select>
+      <button
+        id="searchFlavorButton"
+        type="button"
+        class="btn btn-success text-dark"
+        onclick="flavorOptions()"
+      >
+        Search
+      </button>
+    </div>
+    <div id="displayFlavorGif"></div>
+    <div id="displayDivFlavor"></div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/flavor.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script>
+  </body>
+</html>
