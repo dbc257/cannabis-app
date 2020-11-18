@@ -45,7 +45,7 @@ allButtonBody.addEventListener("click", function () {
     <p></p>
     <h3 style="color: green">Cultivating Strain Information...</h3>
     </body>`;
-  fetch("http://strainapi.evanbusse.com/0d4ocxj/strains/search/all")
+  fetch("https://strainapi.evanbusse.com/0d4ocxj/strains/search/all")
     .then((response) => response.json())
     .then((strainPosts) => {
       renderPosts(strainPosts);
@@ -62,7 +62,7 @@ nameButton.addEventListener("click", function () {
     <p></p>
     <h3 style="color: green">Cultivating Strain Information...</h3>
     </body>`;
-  let nameURL = `http://strainapi.evanbusse.com/0d4ocxj/strains/search/name/${nameTextBox.value}`;
+  let nameURL = `https://strainapi.evanbusse.com/0d4ocxj/strains/search/name/${nameTextBox.value}`;
   fetch(nameURL)
     .then((response) => response.json())
     .then((namePosts) => {

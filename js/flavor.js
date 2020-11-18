@@ -30,7 +30,7 @@ searchFlavorButton.addEventListener("click", function () {
   console.log(f);
   var flavorSelection = document.getElementsByName("flav")[f].value;
   console.log(flavorSelection);
-  let flavorURL = `http://strainapi.evanbusse.com/0d4ocxj/strains/search/flavor/${flavorSelection}`;
+  let flavorURL = `https://strainapi.evanbusse.com/0d4ocxj/strains/search/flavor/${flavorSelection}`;
   fetch(flavorURL)
     .then((response) => response.json())
     .then((flavorPosts) => {

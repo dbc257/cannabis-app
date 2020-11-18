@@ -16,7 +16,7 @@ function PosEffects() {
   console.log(e);
   var posSelection = document.getElementsByName("pos")[e].value;
   console.log(posSelection);
-  let effectURL = `http://strainapi.evanbusse.com/0d4ocxj/strains/search/effect/${posSelection}`;
+  let effectURL = `https://strainapi.evanbusse.com/0d4ocxj/strains/search/effect/${posSelection}`;
   fetch(effectURL)
     .then((response) => response.json())
     .then((effectPosts) => {
@@ -40,7 +40,7 @@ function MedEffects() {
   console.log(e);
   var medSelection = document.getElementsByName("med")[e].value;
   console.log(medSelection);
-  let effectURL = `http://strainapi.evanbusse.com/0d4ocxj/strains/search/effect/${medSelection}`;
+  let effectURL = `https://strainapi.evanbusse.com/0d4ocxj/strains/search/effect/${medSelection}`;
   fetch(effectURL)
     .then((response) => response.json())
     .then((effectPosts) => {
@@ -64,7 +64,7 @@ function NegEffects() {
   console.log(e);
   var negSelection = document.getElementsByName("neg")[e].value;
   console.log(negSelection);
-  let effectURL = `http://strainapi.evanbusse.com/0d4ocxj/strains/search/effect/${negSelection}`;
+  let effectURL = `https://strainapi.evanbusse.com/0d4ocxj/strains/search/effect/${negSelection}`;
   fetch(effectURL)
     .then((response) => response.json())
     .then((effectPosts) => {

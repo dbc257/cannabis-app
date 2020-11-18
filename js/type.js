@@ -11,7 +11,7 @@ sativaButtonBody.addEventListener("click", function () {
     <p></p>
     <h3 style="color: green">Cultivating Strain Information...</h3>
     </body>`;
-  fetch("http://strainapi.evanbusse.com/0d4ocxj/strains/search/race/sativa")
+  fetch("https://strainapi.evanbusse.com/0d4ocxj/strains/search/race/sativa")
     .then((response) => response.json())
     .then((typeClasses) => {
       let typeItem = typeClasses.map(function (type) {
@@ -39,7 +39,7 @@ indicaButtonBody.addEventListener("click", function () {
     <p></p>
     <h3 style="color: green">Cultivating Strain Information...</h3>
     </body>`;
-  fetch("http://strainapi.evanbusse.com/0d4ocxj/strains/search/race/indica")
+  fetch("https://strainapi.evanbusse.com/0d4ocxj/strains/search/race/indica")
     .then((response) => response.json())
     .then((typeClasses) => {
       let typeItem = typeClasses.map(function (type) {
@@ -66,7 +66,7 @@ hybridButtonBody.addEventListener("click", function () {
     <p></p>
     <h3 style="color: green">Cultivating Strain Information...</h3>
     </body>`;
-  fetch("http://strainapi.evanbusse.com/0d4ocxj/strains/search/race/hybrid")
+  fetch("https://strainapi.evanbusse.com/0d4ocxj/strains/search/race/hybrid")
     .then((response) => response.json())
     .then((typeClasses) => {
       let typeItem = typeClasses.map(function (type) {
