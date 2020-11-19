@@ -17,8 +17,8 @@ let displayFlavorGif = document.getElementById("displayFlavorGif");
 //     });
 // }
 // flavorOptions();
-
-searchFlavorButton.addEventListener("click", function () {
+function FlavorOptions() {
+// searchFlavorButton.addEventListener("click", function () {
   displayFlavorGif.innerHTML = `
     <body>
     <p></p>
@@ -53,4 +53,4 @@ searchFlavorButton.addEventListener("click", function () {
       displayFlavorGif.innerHTML = `<h1 style="color: red">Oops, there was a problem getting the data!</h1>"`;
       displayDivFlavor.innerHTML = "";
     });
-});
+}

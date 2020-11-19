@@ -86,8 +86,13 @@
         medical conditions, or negative side effects:
       </label>
       <p></p>
-      <div>
-        <select id="effectSelectorPositive" class="selectpicker">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text bg-success text-white" for="inputGroupSelect01">Desired Effect</label>
+        </div>
+        <select id="effectSelectorPositive" class="custom-select" id="searchPositiveEffectButton"
+        onchange="PosEffects()">
+          <option name="pos" value="" select>Choose...</option>
           <option name="pos" value="Relaxed">Relaxed</option>
           <option name="pos" value="Hungry">Hungry</option>
           <option name="pos" value="Euphoric">Euphoric</option>
@@ -102,7 +107,7 @@
           <option name="pos" value="Giggly">Giggly</option>
           <option name="pos" value="Aroused">Aroused</option>
         </select>
-        <button
+        <!-- <button
           type="button"
           class="btn btn-success"
           class="desiredEffect"
@@ -110,11 +115,34 @@
           onclick="PosEffects()"
         >
           Desired Effect
-        </button>
+        </button> -->
       </div>
       <p></p>
-      <div>
-        <select id="effectSelectorMedical" class="selectpicker">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text bg-success text-white" for="inputGroupSelect01">Medical</label>
+        </div>
+        <select id="effectSelectorMedical" class="custom-select" id="inputGroupSelect01" id="searchMedicalEffectButton"
+        onchange="MedEffects()">
+          <option name="med" value="" select>Choose...</option>
+          <option name="med" value="Depression">Depression</option>
+          <option name="med" value="Insomnia">Insomnia</option>
+          <option name="med" value="Pain">Pain</option>
+          <option name="med" value="Stress">Stress</option>
+          <option name="med" value="Cramps">Cramps</option>
+          <option name="med" value="Lack of Appetite">Lack of Appetite</option>
+          <option name="med" value="Nausea">Nausea</option>
+          <option name="med" value="Headache">Headache</option>
+          <option name="med" value="Fatigue">Fatigue</option>
+          <option name="med" value="Eye Pressure">Eye Pressure</option>
+          <option name="med" value="Inflammation">Inflammation</option>
+          <option name="med" value="Spasticity">Spasticity</option>
+          <option name="med" value="Seizures">Seizures</option>
+          <option name="med" value="Muscle Spasms">Muscle Spasms</option>
+        </select>
+      </div>
+      <!-- <div>
+        <select id="effectSelectorMedical" class="custom-select custom-select-sm">
           <option name="med" value="Depression">Depression</option>
           <option name="med" value="Insomnia">Insomnia</option>
           <option name="med" value="Pain">Pain</option>
@@ -140,16 +168,22 @@
           Medical Issue
         </button>
       </div>
+      <p></p> -->
       <p></p>
-      <div>
-        <select id="effectSelectorNegative" class="selectpicker">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text bg-success text-white" for="inputGroupSelect01">Negative Side Effects</label>
+        </div>
+        <select id="effectSelectorNegative" class="custom-select" id="inputGroupSelect01" id="searchNegativeEffectButton"
+        onchange="NegEffects()">
+          <option name="neg" value="" select>Choose...</option>
           <option name="neg" value="Dizzy">Dizzy</option>
           <option name="neg" value="Dry Mouth">Dry Mouth</option>
           <option name="neg" value="Paranoid">Paranoid</option>
           <option name="neg" value="Dry Eyes">Dry Eyes</option>
           <option name="neg" value="Anxious">Anxious</option>
         </select>
-        <button
+        <!-- <button
           type="button"
           class="btn btn-success"
           class="negativeEffect"
@@ -157,7 +191,7 @@
           onclick="NegEffects()"
         >
           Effect to Avoid
-        </button>
+        </button> -->
       </div>
     </div>
     <div id="displayDivEffect"></div>

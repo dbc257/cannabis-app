@@ -5,6 +5,7 @@ let displayAllGif = document.getElementById("displayAllGif");
 //--------------------------------------------------------------------
 // CODE FOR ALL STRAINS API
 //--------------------------------------------------------------------
+
 function renderPosts(strainPosts) {
   displayDivAllStrain.innerHTML = "";
   let strainItems = "";
@@ -54,7 +55,15 @@ allButtonBody.addEventListener("click", function () {
 //--------------------------------------------------------------------
 // CODE FOR STRAIN SELECTOR BY NAME
 //--------------------------------------------------------------------
-nameButton.addEventListener("click", function () {
+// document.addEventListener("DOMContentLoaded", function () {
+//   let searchForm = document.getElementById("search-form");
+// })
+// nameButton.addEventListener("submit", function () {
+document.addEventListener("DOMContentLoaded", function () {  
+let searchForm = document.getElementById("search-form");
+searchForm.addEventListener("submit", function (e) {
+  e.preventDefault()
+
   displayAllGif.innerHTML = `
     <body>
     <p></p>
@@ -86,4 +95,5 @@ nameButton.addEventListener("click", function () {
       displayAllGif.innerHTML = "";
       displayDivAllStrain.innerHTML = nameVar;
     });
-});
+})
+})
