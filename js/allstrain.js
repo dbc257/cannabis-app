@@ -53,7 +53,7 @@ allButtonBody.addEventListener("click", function () {
     });
 });
 //--------------------------------------------------------------------
-// CODE FOR STRAIN SELECTOR BY NAME
+// CODE FOR TO SEARCH FOR STRAINs BY NAME
 //--------------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", function () {  
