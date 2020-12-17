@@ -91,6 +91,7 @@ searchForm.addEventListener("submit", function (e) {
       });
       displayAllGif.innerHTML = "";
       displayDivAllStrain.innerHTML = nameVar;
+      nameTextBox.value = "";
     });
 })
 })
