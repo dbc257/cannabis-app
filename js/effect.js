@@ -29,9 +29,7 @@ function PosEffects() {
 }
 function MedEffects() {
   var e = document.getElementById("effectSelectorMedical").selectedIndex;
-  console.log(e);
   var medSelection = document.getElementsByName("med")[e].value;
-  console.log(medSelection);
   let effectURL = `https://strainapi.evanbusse.com/0d4ocxj/strains/search/effect/${medSelection}`;
   fetch(effectURL)
     .then((response) => response.json())
