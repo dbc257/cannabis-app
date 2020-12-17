@@ -5,20 +5,7 @@ let displayFlavorGif = document.getElementById("displayFlavorGif");
 //--------------------------------------------------------------------
 // CODE FOR STRAIN SELECTOR BY FLAVOR
 //--------------------------------------------------------------------
-// function flavorOptions() {
-//   fetch("http://strainapi.evanbusse.com/0d4ocxj/searchdata/flavors")
-//     .then((response) => response.json())
-//     .then((flavorPosts) => {
-//       let flavorItem = flavorPosts.map(function (flavor) {
-//         return `<select class="selectpicker">
-//             <option name="flav" value="${flavor}">${flavor}</option>`;
-//       });
-//       flavorSelector.innerHTML = flavorItem;
-//     });
-// }
-// flavorOptions();
 function FlavorOptions() {
-// searchFlavorButton.addEventListener("click", function () {
   displayFlavorGif.innerHTML = `
     <body>
     <p></p>
@@ -27,9 +14,7 @@ function FlavorOptions() {
     <h3 style="color: green">Cultivating Strain Information...</h3>
     </body>`;
   var f = document.getElementById("flavorSelector").selectedIndex;
-  console.log(f);
   var flavorSelection = document.getElementsByName("flav")[f].value;
-  console.log(flavorSelection);
   let flavorURL = `https://strainapi.evanbusse.com/0d4ocxj/strains/search/flavor/${flavorSelection}`;
   fetch(flavorURL)
     .then((response) => response.json())
@@ -48,9 +33,11 @@ function FlavorOptions() {
       });
       displayFlavorGif.innerHTML = "";
       displayDivFlavor.innerHTML = flavorItem.join("");
+      flavorSelector.value = "";
     })
     .catch((err) => {
-      displayFlavorGif.innerHTML = `<h1 style="color: red">Oops, there was a problem getting the data!</h1>"`;
+      displayFlavorGif.innerHTML = `<h1 style="color: red">Oops, there was a problem getting the data!</h1>`;
       displayDivFlavor.innerHTML = "";
+      flavorSelector.value = "";
     });
 }

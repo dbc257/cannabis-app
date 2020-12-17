@@ -1,21 +1,13 @@
-let searchPositiveEffectButton = document.getElementById(
-  "searchPositiveEffectButton"
-);
-let searchMedicalEffectButton = document.getElementById(
-  "searchMedicalEffectButton"
-);
-let searchNegativeEffectButton = document.getElementById(
-  "searchNegativeEffectButton"
-);
+let searchPositiveEffectButton = document.getElementById("searchPositiveEffectButton");
+let searchMedicalEffectButton = document.getElementById("searchMedicalEffectButton");
+let searchNegativeEffectButton = document.getElementById("searchNegativeEffectButton");
 let displayDivEffect = document.getElementById("displayDivEffect");
 //--------------------------------------------------------------------
 // CODE FOR STRAIN SELECTOR BY EFFECT
 //--------------------------------------------------------------------
 function PosEffects() {
   var e = document.getElementById("effectSelectorPositive").selectedIndex;
-  console.log(e);
   var posSelection = document.getElementsByName("pos")[e].value;
-  console.log(posSelection);
   let effectURL = `https://strainapi.evanbusse.com/0d4ocxj/strains/search/effect/${posSelection}`;
   fetch(effectURL)
     .then((response) => response.json())
@@ -32,9 +24,9 @@ function PosEffects() {
             </div>`;
       });
       displayDivEffect.innerHTML = effectItem.join("");
+      effectSelectorPositive.value = ""
     });
 }
-
 function MedEffects() {
   var e = document.getElementById("effectSelectorMedical").selectedIndex;
   console.log(e);
@@ -56,14 +48,12 @@ function MedEffects() {
             </div>`;
       });
       displayDivEffect.innerHTML = effectItem.join("");
+      effectSelectorMedical.value = ""
     });
 }
-
 function NegEffects() {
   var e = document.getElementById("effectSelectorNegative").selectedIndex;
-  console.log(e);
   var negSelection = document.getElementsByName("neg")[e].value;
-  console.log(negSelection);
   let effectURL = `https://strainapi.evanbusse.com/0d4ocxj/strains/search/effect/${negSelection}`;
   fetch(effectURL)
     .then((response) => response.json())
@@ -80,5 +70,6 @@ function NegEffects() {
             </div>`;
       });
       displayDivEffect.innerHTML = effectItem.join("");
+      effectSelectorNegative.value = ""
     });
 }

@@ -7,7 +7,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -15,16 +14,9 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <!-- Latest compiled and minified CSS -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"
-    /> -->
-
     <link rel="stylesheet" href="css/flavor.css" />
     <title>Cannabis Strain App Website</title>
   </head>
-
   <body>
     <nav id="navBar" class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="index.html">Cannabis Strain App</a>
@@ -53,18 +45,10 @@
               >View
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a href="type.html"
-                ><button class="dropdown-item">Strain Type</button></a
-              >
-              <a href="effect.html"
-                ><button class="dropdown-item">Strain Effects</button></a
-              >
-              <a href="flavor.html">
-                <button class="dropdown-item">Strain Flavors</button></a
-              >
-              <a href="allstrain.html">
-                <button class="dropdown-item">All Strains</button></a
-              >
+              <a href="type.html"><button class="dropdown-item">Strain Types</button></a>
+              <a href="effect.html"><button class="dropdown-item">Strain Effects</button></a>
+              <a href="flavor.html"><button class="dropdown-item">Strain Flavors</button></a>
+              <a href="allstrain.html"><button class="dropdown-item">All Strains</button></a>
             </div>
           </li>
           <li class="nav-item active">
@@ -76,23 +60,15 @@
     <img src="images/weed-fruit.jpg" class="img-fluid" alt="Responsive image" />
     <p></p>
     <div id="strainInfo">
-      <h3>Filter Cannabis Strains by Flavor</h3>
-      <p>
-        Each cannabis strain has a unique flavor profile. <br />
-        Some are full and rich, resembling coffee or hints of vanilla. Some
-        offer a powerful zing of citrus. Others remain close to their roots (pun
-        fully intended) holding a pungent, earthy taste close to heart.
-      </p>
-      <label>Use the selector to filter cannabis strains by flavor:</label>
-      <p></p>
-      <!-- <select id="flavorSelector" class="selectpicker" data-live-search="true"> -->
+      <h3>Cannabis Strain Flavors</h3>
+      <br/>
       <div class="input-group mb-3">
         <div class="input-group-prepend">
           <label class="input-group-text bg-success text-white" for="inputGroupSelect01">Flavors</label>
         </div>
         <select id="flavorSelector" class="custom-select" id="searchFlavorButton"
         onchange="FlavorOptions()">
-          <option name="flav" value="" select>Choose...</option>
+          <option name="flav" value="" select>Filter cannabis strains by flavor...</option>
           <option name="flav" value="Earthy">Earthy</option>
           <option name="flav" value="Chemical">Chemical</option>
           <option name="flav" value="Pine">Pine</option>
@@ -142,18 +118,9 @@
           <option name="flav" value="Tobacco">Tobacco</option>
           <option name="flav" value="Violet">Violet</option>
         </select>
-        <!-- <button
-          id="searchFlavorButton"
-          type="button"
-          class="btn btn-success"
-          onclick="flavorOptions()"
-        >
-          Search
-        </button> -->
       </div>
     <div id="displayFlavorGif"></div>
     <div id="displayDivFlavor"></div>
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -171,11 +138,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/flavor.js"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script> -->
-
-    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script> -->
   </body>
 </html>
