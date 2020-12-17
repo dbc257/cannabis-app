@@ -55,10 +55,7 @@ allButtonBody.addEventListener("click", function () {
 //--------------------------------------------------------------------
 // CODE FOR STRAIN SELECTOR BY NAME
 //--------------------------------------------------------------------
-// document.addEventListener("DOMContentLoaded", function () {
-//   let searchForm = document.getElementById("search-form");
-// })
-// nameButton.addEventListener("submit", function () {
+
 document.addEventListener("DOMContentLoaded", function () {  
 let searchForm = document.getElementById("search-form");
 searchForm.addEventListener("submit", function (e) {
