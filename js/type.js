@@ -19,10 +19,10 @@ sativaButtonBody.addEventListener("click", function () {
                 <div class="cardTest" id="thirdType">
                 <div class="cardBody" class="card text-center">
                 <h4><b>${type.name}</b></h4>
-                <h6 class="card-subtitle mb-2 text-muted">${type.id}</h6>
+                <p></p>
                 <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
-                <p id="descList" class="card-text"></p>
-                <p class="card-text"><b>Race: </b>${type.race}</p>
+                <p></p>
+                <p class="card-text">${type.race}</p>
                 </div>
             </div>`;
       });
@@ -46,10 +46,10 @@ indicaButtonBody.addEventListener("click", function () {
         return `<div class="cardTest" id="thirdType">
                 <div class="cardBody" class="card text-center">
                 <h4><b>${type.name}</b></h4>
-                <h6 class="card-subtitle mb-2 text-muted">${type.id}</h6>
+                <p></p>
                 <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
-                <p id="descList" class="card-text"></p>
-                <p class="card-text"><b>Race: </b>${type.race}</p>
+                <p></p>
+                <p class="card-text">${type.race}</p>
                 </div>
             </div>`;
       });
@@ -73,10 +73,10 @@ hybridButtonBody.addEventListener("click", function () {
         return `<div class="cardTest" id="thirdType">
                 <div class="cardBody" class="card text-center">
                 <h4><b>${type.name}</b></h4>
-                <h6 class="card-subtitle mb-2 text-muted">${type.id}</h6>
+                <p></p>
                 <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
-                <p id="descList" class="card-text"></p>
-                <p class="card-text"><b>Race: </b>${type.race}</p>
+                <p></p>
+                <p class="card-text">${type.race}</p>
                 </div>
             </div>`;
       });

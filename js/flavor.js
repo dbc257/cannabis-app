@@ -24,9 +24,9 @@ function FlavorOptions() {
                 <div class="cardTest" id="thirdFlavor">
                     <div class="cardBody" class="card text-center">
                         <h4><b>${flavor.name}</b></h4>
-                        <h6 class="card-subtitle mb-2 text-muted">${flavor.id}</h6>
-                        <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
                         <p class="card-text">${flavor.race}</p>
+                        <p></p>
+                        <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
                         <p class="card-text">${flavor.flavor}</p>
                         </div>
                     </div>`;

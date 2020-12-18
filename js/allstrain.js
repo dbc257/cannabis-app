@@ -17,7 +17,7 @@ function renderPosts(strainPosts) {
                 <h6 class="card-subtitle mb-2 text-muted">${strainItem.race}</h6>
                 <p id="descList" class="card-text"></p>
                 <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
-                <p class="card-text"><b>ID: </b>${strainItem.id}</p>
+                <p></p>
                 <p class="card-text"><b>Flavors: </b>${strainItem.flavors}</p>
                 <p class="card-text"><b>Helps to treat: </b>${strainItem.effects.medical.join(", ")}</p>
                 <p class="card-text"><b>Positive Effects: </b>${strainItem.effects.positive.join(", ")}</p>
@@ -76,12 +76,12 @@ searchForm.addEventListener("submit", function (e) {
         return `
                 <div class="cardTest" id="thirdAll">
                     <div class="cardBody" class="card text-center">
-                    <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>            
-                        <p class="card-text">${name.id}</p>
-                        <h4><b>${name.name}</b></h4>
-                        <h6 class="card-subtitle mb-2 text-muted">${name.race}</h6>
-                        <p id="descList" class="card-text"></p>
-                        <p class="card-text">${description}</p>    
+                      <h4><b>${name.name}</b></h4>
+                      <h6 class="card-subtitle mb-2 text-muted">${name.race}</h6>
+                      <p></p>
+                      <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>            
+                      <p></p>
+                      <p class="card-text">${description}</p>    
                     </div>
                 </div>`;
       });

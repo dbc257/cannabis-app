@@ -16,9 +16,8 @@ function PosEffects() {
         return `<div class="cardTest" id="thirdEffect">
                 <div class="cardBody" class="card text-center">
                 <h4><b>${effect.name}</b></h4>
-                <h6 class="card-subtitle mb-2 text-muted">${effect.id}</h6>
-                <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
                 <p class="card-text">${effect.race}</p>
+                <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
                 <p class="card-text">${effect.effect}</p>
                 </div>
             </div>`;
@@ -38,9 +37,8 @@ function MedEffects() {
         return `<div class="cardTest" id="thirdEffect">
                 <div class="cardBody" class="card text-center">
                 <h4><b>${effect.name}</b></h4>
-                <h6 class="card-subtitle mb-2 text-muted">${effect.id}</h6>
-                <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
                 <p class="card-text">${effect.race}</p>
+                <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
                 <p class="card-text">${effect.effect}</p>
                 </div>
             </div>`;
@@ -60,9 +58,8 @@ function NegEffects() {
         return `<div class="cardTest" id="thirdEffect">
                 <div class="cardBody" class="card text-center">
                 <h4><b>${effect.name}</b></h4>
-                <h6 class="card-subtitle mb-2 text-muted">${effect.id}</h6>
-                <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
                 <p class="card-text">${effect.race}</p>
+                <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
                 <p class="card-text">${effect.effect}</p>
                 </div>
             </div>`;
