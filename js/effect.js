@@ -15,11 +15,13 @@ function PosEffects() {
       let effectItem = effectPosts.map(function (effect) {
         return `<div class="cardTest" id="thirdEffect">
                 <div class="cardBody" class="card text-center">
+                <p></p>
                 <h4><b>${effect.name}</b></h4>
                 <p class="card-text">${effect.race}</p>
                 <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
                 <p></p>
                 <p class="card-text">${effect.effect}</p>
+                <p></p>
                 </div>
             </div>`;
       });
@@ -37,11 +39,13 @@ function MedEffects() {
       let effectItem = effectPosts.map(function (effect) {
         return `<div class="cardTest" id="thirdEffect">
                 <div class="cardBody" class="card text-center">
+                <p></p>
                 <h4><b>${effect.name}</b></h4>
                 <p class="card-text">${effect.race}</p>
                 <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
                 <p></p>
                 <p class="card-text">${effect.effect}</p>
+                <p></p>
                 </div>
             </div>`;
       });
@@ -59,11 +63,13 @@ function NegEffects() {
       let effectItem = effectPosts.map(function (effect) {
         return `<div class="cardTest" id="thirdEffect">
                 <div class="cardBody" class="card text-center">
+                <p></p>
                 <h4><b>${effect.name}</b></h4>
                 <p class="card-text">${effect.race}</p>
                 <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
                 <p></p>
                 <p class="card-text">${effect.effect}</p>
+                <p></p>
                 </div>
             </div>`;
       });

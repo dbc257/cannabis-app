@@ -23,14 +23,16 @@ function FlavorOptions() {
         return `
                 <div class="cardTest" id="thirdFlavor">
                     <div class="cardBody" class="card text-center">
-                        <h4><b>${flavor.name}</b></h4>
-                        <p class="card-text">${flavor.race}</p>
-                        <p></p>
-                        <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
-                        <p></p>
-                        <p class="card-text">${flavor.flavor}</p>
-                        </div>
-                    </div>`;
+                      <p></p>
+                      <h4><b>${flavor.name}</b></h4>
+                      <p class="card-text">${flavor.race}</p>
+                      <p></p>
+                      <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
+                      <p></p>
+                      <p class="card-text">${flavor.flavor}</p>
+                      <p></p>
+                    </div>
+                </div>`;
       });
       displayFlavorGif.innerHTML = "";
       displayDivFlavor.innerHTML = flavorItem.join("");
