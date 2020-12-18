@@ -18,6 +18,7 @@ function PosEffects() {
                 <h4><b>${effect.name}</b></h4>
                 <p class="card-text">${effect.race}</p>
                 <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
+                <p></p>
                 <p class="card-text">${effect.effect}</p>
                 </div>
             </div>`;
@@ -39,6 +40,7 @@ function MedEffects() {
                 <h4><b>${effect.name}</b></h4>
                 <p class="card-text">${effect.race}</p>
                 <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
+                <p></p>
                 <p class="card-text">${effect.effect}</p>
                 </div>
             </div>`;
@@ -60,6 +62,7 @@ function NegEffects() {
                 <h4><b>${effect.name}</b></h4>
                 <p class="card-text">${effect.race}</p>
                 <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
+                <p></p>
                 <p class="card-text">${effect.effect}</p>
                 </div>
             </div>`;

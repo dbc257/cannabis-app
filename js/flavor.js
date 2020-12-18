@@ -27,6 +27,7 @@ function FlavorOptions() {
                         <p class="card-text">${flavor.race}</p>
                         <p></p>
                         <img id='weedLeaf' src='https://www.freepnglogos.com/uploads/weed-leaf-png/weed-leaf-weed-symbol-drawing-clipart-panda-clipart-images-23.png'>
+                        <p></p>
                         <p class="card-text">${flavor.flavor}</p>
                         </div>
                     </div>`;
